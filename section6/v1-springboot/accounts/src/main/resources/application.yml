@@ -5,7 +5,7 @@ spring:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
     username: sa
-    password: ''
+    password: ""
   h2:
     console:
       enabled: true
@@ -14,3 +14,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+    - "application_qa.yml"
+    - "application_prod.yml"
+  profiles:
+    active:
+    - "qa"    
+build:
+  version: "3.O"
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contactDetails: 
+    name: "Shobha"
+    email: "nashobha123@gmail.com"
+  onCallSupport:
+    - (555)555-1234  
+    - (555)523-1345   
