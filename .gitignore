@@ -1,0 +1,15 @@
+# Ignore all target directories
+**/target/
+
+# Ignore IDE files
+*.iml
+.idea/
+*.log
+
+# Ignore build artifacts
+*.class
+*.jar
+*.war
+
+# Ignore environment-specific properties
+application_*.yml
